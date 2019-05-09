@@ -74,8 +74,8 @@ body{
 	margin-left: -40%;
 	margin-right: -40%;
 	height: 175px;
-	-webkit-animation: fadein 1s ease;
-	animation: fadein 1s ease;
+	-webkit-animation: fadein 2.5s ease;
+	animation: fadein 2.5s ease;
 }
 
 @keyframes fadein {
@@ -108,8 +108,8 @@ body{
 
 .bio .headline > h1, .bio .headline > p {
 	opacity: 1;
-	-webkit-animation: open 5.5s ease-in;
-	animation: open 5.5s ease-in;
+	-webkit-animation: open 4.5s ease-in;
+	animation: open 4.5s ease-in;
 }
 
 @keyframes open {
