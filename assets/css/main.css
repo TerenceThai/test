@@ -1,8 +1,10 @@
-html, body {
-
+html, body, #allContent{
+	height: 100%;
+	width: 100%;
 }
 
 body{
+	position: absolute;
 	background-color: #272626;
 	background-attachment: fixed;
     background-position:bottom center;
@@ -13,10 +15,10 @@ body{
 }
 
 #allContent{
-	height: 100%;
+	position: absolute;
 	display: flex;
 	justify-content: center;
-	flex-shrink: 1 2;
+	align-items: center;
 }
 
 #hamburger {
@@ -27,6 +29,7 @@ body{
 	box-shadow: 3px 3px 13px 2px black;
 }
 
+}
 
 @keyframes wallpaper {
 	from {
