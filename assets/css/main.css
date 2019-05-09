@@ -22,10 +22,13 @@ body{
 }
 
 #hamburger {
-	height: 70px;
-	width: 60px;
+	height: 55px;
+	width: 55px;
 	display: none;
-	opacity: .5;
+	opacity: .6;
+	box-shadow: 3px 3px 13px 2px black;
+}
+
 }
 
 @keyframes wallpaper {
