@@ -1,11 +1,13 @@
+html, body{
+	height: 100%;
+	width: 100%;
+}
 
 body{
 	position: absolute;
-    margin: auto;
-    width: 100%;
 	background-color: #272626;
 	background-attachment: fixed;
-    background-position:center center;
+    background-position:bottom center;
 	background-repeat: no-repeat;
 	background-image: linear-gradient(to top, rgba(17, 18, 20, 0.774), rgba(24, 25, 26, 0.685)), url("../../images/bg.jpg");
 	-webkit-animation: wallpaper 3s;
@@ -13,7 +15,6 @@ body{
 	justify-content: center;
 	align-items: center;
 	display: flex;
-	height: 100%;
 }
 
 @keyframes wallpaper {
@@ -22,7 +23,7 @@ body{
 	}
 
 	to {
-		background-position:center center;
+		background-position:bottom center;
 		background-attachment: fixed;
 	}
 }
@@ -33,7 +34,7 @@ body{
 	}
 
 	to {
-		background-position:center center;
+		background-position:bottom center;
 		background-attachment: fixed;
 	}
 }
@@ -62,8 +63,8 @@ body{
 	margin-left: -40%;
 	margin-right: -40%;
 	height: 175px;
-	-webkit-animation: fadein 2s ease;
-	animation: fadein 2s ease;
+	-webkit-animation: fadein 1s ease;
+	animation: fadein 1s ease;
 }
 
 @keyframes fadein {
@@ -96,8 +97,8 @@ body{
 
 .bio .headline > h1, .bio .headline > p {
 	opacity: 1;
-	-webkit-animation: open 6.5s ease-in;
-	animation: open 6.5s ease-in;
+	-webkit-animation: open 5.5s ease-in;
+	animation: open 5.5s ease-in;
 }
 
 @keyframes open {
