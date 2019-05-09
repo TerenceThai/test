@@ -1,10 +1,8 @@
-html, body, #allContent{
-	height: 100%;
-	width: 100%;
+html, body {
+
 }
 
 body{
-	position: absolute;
 	background-color: #272626;
 	background-attachment: fixed;
     background-position:bottom center;
@@ -15,10 +13,10 @@ body{
 }
 
 #allContent{
-	position: absolute;
+	height: 100%;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	flex-shrink: 1 2;
 }
 
 #hamburger {
@@ -29,7 +27,6 @@ body{
 	box-shadow: 3px 3px 13px 2px black;
 }
 
-}
 
 @keyframes wallpaper {
 	from {
@@ -159,6 +156,8 @@ margin-top: 10%;
 }
 
 nav a {
+	display: flex;
+	justify-content: center;
     border-style: solid;
 	border-color: rgb(61, 61, 61);
 	border-width: 1px;
@@ -170,6 +169,7 @@ nav a {
 	padding-top: 2.5%;
 	padding-bottom: 2.5%;
 	background-color: rgba(21, 39, 24, 0.1);
+	width: 100%;
 
 }
 
@@ -234,7 +234,7 @@ nav a:hover {
 
 }
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 850px) and (orientation: portrait){
 
 	#allContent {
 		height: 65%;
@@ -314,7 +314,7 @@ nav a:hover {
 		/* display: block */
 	}
 
-	/* nav a {
+	nav a {
 		font-size: smaller;
 	}
 
@@ -327,11 +327,11 @@ nav a:hover {
    		padding-right: 5%;
 		padding-top: 2%;
 		padding-bottom: 2%;
-	} */
+	}
 	
 }
 
-@media screen and (max-width: 575px){
+@media screen and (max-width: 575px) and (orientation: portrait){
 
 	.bio {
 		border-style: groove;
