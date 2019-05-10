@@ -15,20 +15,15 @@ body{
 }
 
 #allContent{
-	position: absolute;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 #hamburger {
-	height: 55px;
-	width: 55px;
+	height: 60px;
+	width: 60px;
 	display: none;
-	opacity: .6;
-	box-shadow: 3px 3px 13px 2px black;
-}
-
 }
 
 @keyframes wallpaper {
@@ -111,8 +106,8 @@ body{
 
 .bio .headline > h1, .bio .headline > p {
 	opacity: 1;
-	-webkit-animation: open 4.5s ease-in;
-	animation: open 4.5s ease-in;
+	-webkit-animation: open 5.5s ease-in;
+	animation: open 5.5s ease-in;
 }
 
 @keyframes open {
@@ -335,46 +330,85 @@ nav a:hover {
 }
 
 @media screen and (max-width: 575px) and (orientation: portrait){
+	
+	#allContent {
+		height: 75%;
+		width: 100%;
+	}
 
+	#header {
+		/* display: none; */
+		width: 80%;
+	}
+	
 	.bio {
 		border-style: groove;
 		border-width: 2px;
 		border-left: none;
 		border-right: none;
 		margin-top: 6%;
-		margin-left: -7%;
-		margin-right: -7%;
-		height: 135px;
-		-webkit-animation: fadein 2s ease;
-		animation: fadein 2s ease;
+		margin-left: -5%;
+		margin-right: -5%;
+		height: 155px;
+		-webkit-animation: fadein 2s ease-out;
+		animation: fadein 2s ease-out;
 	}
 	
 	@keyframes fadein {
 		from {
 			height: 0px;
-			margin-left: -30%;
-			margin-right: -30%;
+			margin-left: -10%;
+			margin-right: -10%;
 	
 		}
 		to {
 			height: 135px;
-			margin-left: -7%;
-			margin-right: -7%;
+			margin-left: -5%;
+			margin-right: -5%;
 		}
 	}
 	
 	@-webkit-keyframes fadein {
 		from {
 			height: 0px;
-			margin-left: -30%;
-			margin-right: -30%;
+			margin-left: -10%;
+			margin-right: -10%;
 	
 		}
 		to {
 			height: 135px;
-			margin-left: -7%;
-			margin-right: -7%;
+			margin-left: -5%;
+			margin-right: -5%;
 		}
 	}
 
+}
+
+@media screen and (max-width: 700px), screen and (max-height: 400px) {
+	.bio {
+		height: 135px;
+	}
+
+	.logo {
+		height: 9em;
+	}
+
+	.profile {
+		width: 120px;
+		height: 120px;
+	}
+
+	@keyframes fadein {
+		from {
+			height: 0px;
+			margin-left: -200%;
+			margin-right: -200%;
+	
+		}
+		to {
+			height: 135px;
+			margin-left: -40%;
+			margin-right: -40%;
+		}
+	}
 }
