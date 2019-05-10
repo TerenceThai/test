@@ -9,7 +9,7 @@ body{
 	background-attachment: fixed;
     background-position:bottom center;
 	background-repeat: no-repeat;
-	background-image: linear-gradient(to top, rgba(17, 18, 20, 0.541), rgba(24, 25, 26, 0.685)), url("../../images/bg.jpg");
+	background-image: linear-gradient(to top, rgba(9, 10, 10, 0.466), rgba(24, 25, 26, 0.685)), url("../../images/bg.jpg");
 	-webkit-animation: wallpaper 3s;
 	animation: wallpaper 3s;
 }
