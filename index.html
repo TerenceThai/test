@@ -10,8 +10,17 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
-<body class="body">
-		<img src="./images/hamburger.png" id="hamburger"/>
+<body id="body">
+	<div id="menu">
+		<span id="menuHead">
+			<img src="./images/x.png" id="x" onclick="closeBurger()"/>
+		</span>
+		<a href="#intro">About</a>
+		<a href="#work">Work</a>
+		<a href="./Terry_Thai.pdf">Resume</a>
+		<a href="#contact">Contact</a>
+	</div>
+	<img src="./images/hamburger.png" id="hamburger" onclick="burger()"/>
 	<div id="allContent">
 
 		<header id="header">
@@ -104,5 +113,5 @@
 
 	</div>
 </body>
-
+<script src="./assets/js/main.js"></script>
 </html>
