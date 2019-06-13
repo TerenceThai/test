@@ -374,9 +374,9 @@ nav a:hover {
 }
 
 @media screen and (max-width: 700px) and (orientation: landscape) {
-	/* body{
-		height: 90%
-	} */
+	#allContent {
+		height: 100%;
+	}
 
 	.logo {
 		height: 8em;
