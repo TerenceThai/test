@@ -381,6 +381,10 @@ nav a:hover {
 	#allContent {
 		height: 100%;
 	}
+	
+	body {
+		background-size: cover;
+	}
 
 	.logo {
 		height: 8em;
