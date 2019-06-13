@@ -20,7 +20,7 @@ body{
 	justify-content: center;
 	height: 100%;
     padding: 0;
-    margin: 0;
+	margin: 0;
 }
 
 #hamburger {
@@ -265,6 +265,10 @@ nav a:hover {
 }
 
 @media screen and (max-width: 850px) and (orientation: portrait) {
+
+	body {
+		background-size: cover;
+	}
 
 	#hamburger{
 		display: block;
