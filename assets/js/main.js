@@ -1,20 +1,45 @@
 const hamburger = document.getElementById('hamburger')
 const menu = document.getElementById('menu')
 const body = document.getElementById('body')
-const allContent = document.getElementById('allContent')
+const header = document.getElementById('header')
+const main = Array.from(document.getElementById('main').children)
 
 function burger() {
 
     hamburger.style.visibility = 'hidden'
-    menu.style.visibility = 'visible'
-    allContent.style.filter = 'blur(10px)'
+    menu.style.display = 'flex'
+    header.style.filter = 'blur(10px)'
 
 }
 
 function closeBurger() {
 
     hamburger.style.visibility = 'visible'
-    menu.style.visibility = 'hidden'
-    allContent.style.filter = 'none'
+    header.style.filter = 'none'
+    menu.style.display = 'none'
+}
+
+function showSection() {
+    const name = event.target.name
+    const section = document.getElementById(name)
+
+    main.forEach(element => {
+        element.style.display = 'none'
+    })
+
+    header.style.display = 'none'
+    menu.style.display = 'none'
+    hamburger.style.visibility = 'visible'
+    section.style.display = 'flex'
+
+}
+
+function home() {
+
+    main.forEach(element => {
+        element.style.display = 'none'
+    })
+    
+    header.style.display = 'block'
 
 }
