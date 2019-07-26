@@ -47,7 +47,7 @@ body{
 
 #menu span:first-child{
 	border-bottom: 2px double rgba(136, 136, 136, 0.425);
-	height: 6%;
+	height: 3%;
 	display: flex;
 	justify-content: flex-end;
 }
@@ -223,17 +223,69 @@ nav a:hover {
 	display: none
 }
 
+#main > * {
+    width: 70vw;
+    height: 60vh;
+    padding: 3%;
+    color: #b7b7b7;
+    background-color: #2d2d2d7d;
+    text-align: center;
+    border-radius: 5px;
+    overflow-y: scroll;
+	display: none;
+	flex-direction: column
+	}
+	
 #main img {
+	max-width: 50%;
 }
 
-#main p {
-
+#main p, #main ul {
+	word-spacing: 1.5px;
+	text-align: left;
+	line-height: 1.7;
+	padding: 0% 6% 0% 6%;
+	font-size: 80%;
 }
 
+#main ul {
+	padding: 0 10% 0 10%;
+}
 
+#contact {
+	width: 40vw;
+	height: 35vh;
+	overflow: unset;
+}
+
+#fields {
+	width: auto;
+	height: auto;
+	overflow: unset;
+}
+
+#message{
+	width: 70%
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+	background: rgb(58, 58, 58);
+	border-radius: 20px;
+  }
+  
+::-webkit-scrollbar-track {
+	background: rgb(211, 211, 211);
+	border-radius: 20px;
+  }
+  
 /* --------------------------------------------Media Queries-------------------------------------------- */
 
-@media screen and (max-width: 1200px){
+/* @media screen and (min-width: 1200px){
 
 	.bio {
 		margin-left: 14vw;
@@ -282,7 +334,7 @@ nav a:hover {
 		}
 	}
 
-}
+} */
 
 @media screen and (max-width: 850px) and (orientation: portrait) {
 
@@ -341,13 +393,12 @@ nav a:hover {
 	}
 
 	#main > * {
-	width: 85vw;
-	max-height: 85vh;
-	min-height: 75vh;
-	color: #000000;
-	background-color:#ffffff;
-	text-align: center;
-	display: none;
+		min-height: 65vh;
+		width: 45vh;
+		max-height: 65vh;
+		padding: 0;
+		color: #000000;
+		background: #E8E7E7;
 	}
 
 	main span {
@@ -359,27 +410,33 @@ nav a:hover {
 		max-width:100%;
 	}
 
-	#main p {
-	word-spacing: 1.5px;
-	text-align: left;
-	line-height: 1.7;
-	padding: 0 7% 7% 7%;
-	font-size: 80%;
-	}
+
 
 	#intro, #work, #contact{
 		flex-direction: column;
 	}
 
 	#work {
-		overflow: scroll;
+		overflow-y: scroll;
 	}
 
 	#contact {
 		max-height: auto;
 		min-height: auto;
 	}
+
+	.projectInfo {
+		background: white;
+		box-shadow: 0 0 3px 0px #4c4b4b;
+		margin: 5px 7px -9px 7px;
+	}	
 	
+	::-webkit-scrollbar {
+		width: 0px;
+		height: 0px;
+	  }
+	   
+
 }
 
 @media screen and (max-width: 575px) and (orientation: portrait){
@@ -436,18 +493,7 @@ nav a:hover {
 
 }
 
-@media screen and (max-width: 925px) and (orientation: landscape) {
-
-	.logo {
-		height: 8em;
-
-	}
-
-	.profile {
-		width: 100px;
-		height: 100px;
-		transition: all .5s
-	}
+@media screen and (max-width: 950px) and (orientation: landscape) {
 
 	.profile:hover{
 		width: 108px;
@@ -460,12 +506,12 @@ nav a:hover {
 	nav a {
     	padding-left: 12vh;
    		padding-right: 12vh;
-		padding-top: 1vh;
-		padding-bottom: 1vh;
 	}
-	
-	 .bio {
-		height: 125px;
+
+	.bio {
+		margin-left: 10vw;
+		margin-right: 10vw;
+		height: 145px;
 	}
 
 	@keyframes fadein {
@@ -476,9 +522,9 @@ nav a:hover {
 
 		}
 		to {
-			height: 125px;
-			margin-left: 14vw;
-			margin-right: 14vw;
+			height: 145px;
+			margin-left: 10vw;
+			margin-right: 10vw;
 		}
 	}
 
@@ -490,9 +536,9 @@ nav a:hover {
 
 		}
 		to {
-			height: 125px;
-			margin-left: 14vw;
-			margin-right: 14vw;
+			height: 145px;
+			margin-left: 10vw;
+			margin-right: 10vw;
 		}
 	}
 }

@@ -1,3 +1,5 @@
+// mobile functions -------------------------------------------------------
+
 const hamburger = document.getElementById('hamburger')
 const menu = document.getElementById('menu')
 const body = document.getElementById('body')
@@ -41,5 +43,21 @@ function home() {
     })
     
     header.style.display = 'block'
+
+    closeBurger()
+}
+
+// desktop functions -------------------------------------------------------
+
+function showDesktopSection() {
+    const name = event.target.name
+    const section = document.getElementById(name)
+
+    // main.forEach(element => {
+    //     element.style.display = 'none'
+    // })
+
+    header.style.display = 'none'
+    section.style.display = 'block'
 
 }
