@@ -32,12 +32,13 @@ body{
 
 #menu {
 	z-index: 5;
-	height: 90%;
-	width: 85%;
+	height: 100%;
+	width: 50%;
 	position: absolute;
 	background: rgba(12, 12, 12, 0.97);
 	display: none;
 	flex-direction: column;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 #menu > * {
@@ -45,13 +46,20 @@ body{
 	text-decoration: none;
 }
 
-#menu span:first-child{
-	border-bottom: 2px double rgba(136, 136, 136, 0.425);
-	height: 3%;
+#menu span{
+	height: 2%;
 	display: flex;
 	justify-content: flex-end;
 }
 
+#first {
+	border-top: 1px double rgba(136, 136, 136, 0.425);
+}
+
+#menu a:hover {
+	background: rgba(83, 83, 83, 0.425);
+	color: rgba(253, 253, 253, 0.856);
+}
 #x {
 	height: 95%;
 	float: right;
@@ -283,6 +291,9 @@ nav a:hover {
 	border-radius: 20px;
   }
   
+  a:link, a:visited {
+	color:rgb(154, 160, 163);
+  }
 /* --------------------------------------------Media Queries-------------------------------------------- */
 
 /* @media screen and (min-width: 1200px){
