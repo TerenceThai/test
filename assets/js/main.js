@@ -61,3 +61,13 @@ function showDesktopSection() {
     section.style.display = 'block'
 
 }
+
+function closeDesktopSection(){
+
+    main.forEach(element => {
+        element.style.display = 'none'
+    })
+    
+    header.style.display = 'block'
+    header.style.filter = 'none'
+}

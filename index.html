@@ -46,8 +46,8 @@
 
 		</header>
 
-		<div id="main">
-			<article id="intro">
+		<div id="main" onclick="closeDesktopSection()">
+			<article id="intro" >
 				<span class="image main"><img src="./images/me.jpg" alt="" /></span>
 				<div class="projectInfo">
 					<h2 class="major">Summary</h2>
@@ -64,7 +64,7 @@
 				</br>
 			</article>
 
-			<article id="work">
+			<article id="work" onclick="closeDesktopSection()">
 				
 				<span><img src="./images/ezsplit.PNG" alt="" /></span>
 				<div class="projectInfo">
@@ -111,9 +111,10 @@
 							<textarea name="message" id="message"></textarea>
 						</div>
 					</div>
-					<input type="submit" value="Send Message" class="primary" />
+					<input type="submit" value="Send" class="primary" />
 					<input type="reset" value="Reset" />
-				</form>
+					</form>
+					<button id='close' onclick="closeDesktopSection()">Close</button>
 			</article>
 		</div>
 
